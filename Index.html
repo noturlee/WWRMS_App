@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WWRMS Tracker | App Download</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #0b3b64;
+      color: #fff;
+      padding: 16px 24px;
+    }
+
+    header h1 {
+      font-size: 1.4rem;
+      letter-spacing: 0.03em;
+    }
+
+    header p {
+      font-size: 0.9rem;
+      opacity: 0.9;
+      margin-top: 4px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      max-width: 700px;
+      width: 100%;
+      padding: 24px 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .card h2 {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+      color: #0b3b64;
+    }
+
+    .subtitle {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-top: 16px;
+      margin-bottom: 6px;
+      color: #0b3b64;
+    }
+
+    ul {
+      margin-left: 18px;
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    .btn-wrapper {
+      margin: 24px 0 10px 0;
+      text-align: center;
+    }
+
+    .download-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 999px;
+      background: #0b3b64;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+    }
+
+    .download-btn:hover {
+      opacity: 0.9;
+    }
+
+    .note {
+      font-size: 0.85rem;
+      color: #555;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .steps {
+      margin-top: 12px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+      padding: 12px 8px 18px 8px;
+    }
+
+    @media (min-width: 720px) {
+      .card {
+        padding: 28px 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>Worldwide Rail & Mining Solutions (Pty) Ltd</h1>
+    <p>WWRMS Tracker – Attendance & Site Presence App</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>WWRMS Tracker App Download</h2>
+      <p class="subtitle">
+        Use this app to log your attendance while on site. The app records when you <strong>log in</strong> and 
+        <strong>log off</strong> together with your GPS location.
+      </p>
+
+      <div class="btn-wrapper">
+        <!-- APK download button -->
+        <a
+          class="download-btn"
+          href="https://drive.google.com/file/d/1NWPfhYlLf2j2QiCYzbH--qUEI8oA_m_Y/view?usp=sharing"
+          target="_blank"
+          rel="noopener"
+        >
+          Download WWRMS Tracker APK
+        </a>
+      </div>
+
+      <p class="note">
+        After download, open the APK from your <strong>Downloads</strong> folder to install the app on your Android device.
+      </p>
+
+      <div class="steps">
+        <p class="section-title">How to install</p>
+        <ul>
+          <li>Tap the <strong>Download WWRMS Tracker APK</strong> button above.</li>
+          <li>On the Google Drive page, tap the <strong>Download</strong> icon.</li>
+          <li>Once downloaded, go to your phone’s <strong>Files / Downloads</strong> folder.</li>
+          <li>Tap the APK file and follow the prompts to install.</li>
+          <li>If asked, allow installation from this source (for this one app).</li>
+        </ul>
+
+        <p class="section-title">How to use the app</p>
+        <ul>
+          <li>Create an account using your <strong>employee number</strong> as your username.</li>
+          <li>Set a password of your choice and log in.</li>
+          <li>When you arrive on site, open the app and tap the switch/button to <strong>log in</strong>.</li>
+          <li>Leave it on <strong>green</strong> for the duration of your shift.</li>
+          <li>Just before leaving site to return to the hotel, open the app again and <strong>log off</strong> (switch returns to red).</li>
+        </ul>
+
+        <p class="section-title">Important</p>
+        <ul>
+          <li>Only log in when you are physically <strong>on site</strong>.</li>
+          <li>Always log off at the <strong>end of the day</strong> before leaving.</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Worldwide Rail & Mining Solutions (Pty) Ltd. All rights reserved.
+  </footer>
+</div>
+
+<script>
+  // Auto-set current year in footer
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
